@@ -1,0 +1,110 @@
+/**
+## Macros
+*/
+
+/*
+
+macro define_hello_world in class | fun {
+    (function:ident) -> {
+            fun $function() {
+                println("Hello, world!")
+            }
+    }
+}
+
+macro some {
+    (this:ident | this:fun) -> ...
+    (this:expr other:ident) -> ...
+    else -> ... //TODO do we need this?
+}
+
+macro some2 {
+    (func:ident "returns" value:ident) -> {
+        fun $func() {
+            return $value;
+        }
+    }
+    (func:ident "throws" exception:ident) -> {
+        fun $func() {
+            throw $exception()
+        }
+    }
+
+}
+
+...
+
+class SomeClass {
+    define_hello_world!(hello_world_1)
+    define_hello_world!(hello_world_2)
+}
+
+...
+
+fun someFun() {
+    define_hello_world!(hw_in_fun)
+    hw_in_fun()
+}
+
+...
+
+// context is module
+
+define_hello_world!(i_want_hw_in_module) // wrong!
+
+*/
+
+/* Macro declaration syntax */
+
+macro
+    : "macro" SimpleName
+        macroContext?
+        macroBody
+    ;
+
+
+macroContext
+    : "in" ("class" | "object" | "fun" | "module"| "*")
+
+
+macroBody
+    : "{" + macroOccurrences + "}"
+    ;
+
+
+macroOccurrences
+    : macroOccurrenceDeclaration*
+    ;
+
+
+macroOccurrenceDeclaration
+    : macroRegex "->" block
+    : macroRegexExpression "->" block
+    ;
+
+
+macroRegex
+    : "(" macroRegexExpression ")"
+    ;
+
+
+macroRegexExpression
+    : SimpleName ":" (macroIdentifierType | stringTemplate) macroRegexModifier?
+    ;
+
+macroIdentifierType
+    : "ident"
+    : "expr"
+    : "type"
+    : "block"
+    // TODO ??
+    ;
+
+
+macroRegexModifier
+    : "?"
+    : "+"
+    : "*"
+    : "{" IntegerLiteral? "," IntegerLiteral? "}"
+    ;
+
