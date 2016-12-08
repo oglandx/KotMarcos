@@ -1,0 +1,82 @@
+\begin{thebibliography}{10}
+
+\bibitem{c_preprocessor_macros}
+Macros -- the c preprocessor.
+\newblock \url{https://gcc.gnu.org/onlinedocs/cpp/Macros.html}.
+\newblock Доступ осуществлён: 12.08.2016.
+
+\bibitem{Abelson:1996:SIC:547755}
+Harold Abelson and Gerald~J. Sussman.
+\newblock {\em Structure and Interpretation of Computer Programs}.
+\newblock MIT Press, Cambridge, MA, USA, 2nd edition, 1996.
+
+\bibitem{Bawden1999}
+Alan Bawden.
+\newblock Quasiquotation in lisp.
+\newblock In {\em Partial Evaluation and Semantic-Based Program Manipulation},
+  pages 4--12, 1999.
+
+\bibitem{clinger91hygienic}
+W.~Clinger.
+\newblock Hygienic macros through explicit renaming, 1991.
+
+\bibitem{Clinger:1991:MW:99583.99607}
+William Clinger and Jonathan Rees.
+\newblock Macros that work.
+\newblock In {\em Proceedings of the 18th ACM SIGPLAN-SIGACT Symposium on
+  Principles of Programming Languages}, POPL '91, pages 155--162, New York, NY,
+  USA, 1991. ACM.
+
+\bibitem{Herman:2010:TTH:1925552}
+David Herman.
+\newblock {\em A Theory of Typed Hygienic Macros}.
+\newblock PhD thesis, Boston, MA, USA, 2010.
+\newblock AAI3398847.
+
+\bibitem{share_709_system}
+I.D. Greenwald;~M. Kane.
+\newblock {The Share 709 System: Programming and Modification}.
+\newblock {\em Journal of the ACM}, 6(2):128--133, 1959.
+
+\bibitem{Kernighan:1978:CPL:7519}
+B.~W. Kernighan and D.~M. Ritchie.
+\newblock {\em The C Programming Language}.
+\newblock Prentice-Hall, Inc., Upper Saddle River, NJ, USA, 1978.
+
+\bibitem{Kohlbecker:1987:MDS:41625.41632}
+E.~E. Kohlbecker and M.~Wand.
+\newblock Macro-by-example: Deriving syntactic transformations from their
+  specifications.
+\newblock In {\em Proceedings of the 14th ACM SIGACT-SIGPLAN Symposium on
+  Principles of Programming Languages}, POPL '87, pages 77--84, New York, NY,
+  USA, 1987. ACM.
+
+\bibitem{Kohlbecker:1986:HME:319838.319859}
+Eugene Kohlbecker, Daniel~P. Friedman, Matthias Felleisen, and Bruce Duba.
+\newblock Hygienic macro expansion.
+\newblock In {\em Proceedings of the 1986 ACM Conference on LISP and Functional
+  Programming}, LFP '86, pages 151--161, New York, NY, USA, 1986. ACM.
+
+\bibitem{McIlroy:1960:MIE:367177.367223}
+M.~Douglas McIlroy.
+\newblock Macro instruction extensions of compiler languages.
+\newblock {\em Commun. ACM}, 3(4):214--220, April 1960.
+
+\bibitem{EPFL-REPORT-185242}
+Denys Shabalin, Eugene Burmako, and Martin Odersky.
+\newblock Quasiquotes for {S}cala.
+\newblock Technical report, 2013.
+
+\bibitem{Skalski:2005}
+Kamil Skalski.
+\newblock {Syntax-extending and type-reflecting macros in and object-oriented
+  language}.
+\newblock Master's thesis, Institute of Computer Science, University of
+  Wroclaw, Wroclaw, 2005.
+
+\bibitem{Steele:1993:EL:155360.155373}
+Guy~L. Steele, Jr. and Richard~P. Gabriel.
+\newblock The evolution of lisp.
+\newblock {\em SIGPLAN Not.}, 28(3):231--270, March 1993.
+
+\end{thebibliography}

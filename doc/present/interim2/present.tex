@@ -1,0 +1,84 @@
+\documentclass[11pt]{beamer}
+\usetheme{Madrid}
+\usepackage[utf8]{inputenc}
+\usepackage[russian]{babel}
+\usepackage{amsmath}
+\usepackage{amsfonts}
+\usepackage{amssymb}
+\usepackage{here}
+\beamertemplatenavigationsymbolsempty
+\author[Косолапов С.А.]{Косолапов Семен Александрович}
+\title[Промежуточная аттестация 2]{Разработка системы макросов для языка Kotlin}
+\date{\today} 
+\institute[СПбПУ]{
+Руководитель: Беляев М.А.
+}
+\begin{document}
+
+
+\begin{frame}
+\titlepage
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Что требуется?}
+
+Разработать препроцессор макроопределений, расширяющих язык Kotlin.
+
+\begin{itemize}
+	\item На входе - программа на расширенном языке Kotlin с конструкциями, позволяющими определять и применять макро
+	\item На выходе - программа на <<чистом>> языке Kotlin
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Используемые принципы}
+
+\begin{itemize}
+	\item Macro-by-example
+	\item Hygienic macros
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Что было сделано?}
+
+\begin{itemize}
+	\item Знакомство с кодом компилятора языка Kotlin
+	\item Определён начальный вариант синтаксиса
+	\item Начато написание кода
+\end{itemize}
+
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Что предстоит сделать?}
+\begin{itemize}
+	\item Всё остальное
+\end{itemize}	
+\end{frame}
+
+
+\begin{frame}
+\frametitle{Что предстоит сделать?}
+\begin{itemize}
+	\item Программу, выполняющую простейшие преобразования
+	\item Реализация принципа macro-by-example
+	\item Обеспечить гигиену
+	\item ???
+\end{itemize}	
+\end{frame}
+
+
+\begin{frame}
+\huge{\centerline{Спасибо за внимание!}}
+\end{frame}
+
+
+\end{document}

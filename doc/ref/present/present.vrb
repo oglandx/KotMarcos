@@ -1,0 +1,19 @@
+\frametitle{Что должно получиться?}
+
+\begin{lstlisting}
+
+macro define_hello_world {
+    (function:ident) -> {
+            fun $function() {
+                println("Hello, world!")
+            }
+    }
+}
+
+fun someFun() {
+    define_hello_world!(hw_in_fun)
+    hw_in_fun() // -> "Hello, world!"
+}
+
+\end{lstlisting}
+
